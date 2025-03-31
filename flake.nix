@@ -83,6 +83,12 @@
             ${lib.getExe outputs'.formatter} .
           ''
         );
+
+        templates.default = {
+          path = ./.;
+          description = "My Nix Flake Template";
+        };
+
       }
     );
 }
